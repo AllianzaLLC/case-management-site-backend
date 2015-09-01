@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // suports json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true})); // supports encoded bodies
 
-var RefferalItem = require("./models/refferalForm");
+var RefferalItem = require("./models/RefferalForm");
 var User = require("./models/user").User;  
 var Emails = require("./models/email").Emails; 
 
@@ -14,8 +14,8 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
 	serivce: 'Gmail',
 	auth: {
-		user: 'ruvalcaba.mark@gmail.com',
-		pass: 'juanajose123'
+		user: '**********',
+		pass: '**********'
 	}
 }); 
 
